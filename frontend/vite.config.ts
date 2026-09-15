@@ -1,7 +1,22 @@
-import vue from '@vitejs/plugin-vue'
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite"
+import vue from "@vitejs/plugin-vue"
+import Components from "unplugin-vue-components/vite"
+import { ParaxeResolver } from "@paraxe/vue/resolver"
+import path from "path"
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    Components({
+      resolvers: [ParaxeResolver()],
+    }),
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  server: {
+    port: 5173,
+  },
 })
