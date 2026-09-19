@@ -11,8 +11,31 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Alert: typeof import('@paraxe/vue')['Alert']
+    Badge: typeof import('@paraxe/vue')['Badge']
+    Breadcrumb: typeof import('@paraxe/vue')['Breadcrumb']
+    Breadcrumbs: typeof import('@paraxe/vue')['Breadcrumbs']
+    Button: typeof import('@paraxe/vue')['Button']
+    Card: typeof import('@paraxe/vue')['Card']
+    Container: typeof import('@paraxe/vue')['Container']
+    EmptyState: typeof import('@paraxe/vue')['EmptyState']
+    Eyebrow: typeof import('@paraxe/vue')['Eyebrow']
+    Grid: typeof import('@paraxe/vue')['Grid']
+    Heading: typeof import('@paraxe/vue')['Heading']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Input: typeof import('@paraxe/vue')['Input']
+    Label: typeof import('@paraxe/vue')['Label']
+    List: typeof import('@paraxe/vue')['List']
+    ListItem: typeof import('@paraxe/vue')['ListItem']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Section: typeof import('@paraxe/vue')['Section']
+    SectionHeader: typeof import('@paraxe/vue')['SectionHeader']
+    Sidebar: typeof import('@paraxe/vue')['Sidebar']
+    SidebarGroup: typeof import('@paraxe/vue')['SidebarGroup']
+    SidebarItem: typeof import('@paraxe/vue')['SidebarItem']
+    Skeleton: typeof import('@paraxe/vue')['Skeleton']
+    Stack: typeof import('@paraxe/vue')['Stack']
+    Text: typeof import('@paraxe/vue')['Text']
   }
 }

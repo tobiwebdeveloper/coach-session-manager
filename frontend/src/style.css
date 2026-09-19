@@ -13,3 +13,106 @@ body {
   font-family: var(--font-family-body);
   color: white;
 }
+.font-mono {
+  font-family: var(--font-family-mono);
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+.metric-card {
+  padding: var(--space-5);
+}
+.metric-card__top {
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.metric-card .heading-lg {
+  margin-block: var(--space-3) var(--space-1);
+}
+.metric-icon {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-md);
+  background: color-mix(in oklch, var(--brand-primary) 12%, transparent);
+  color: var(--brand-primary);
+}
+.metric-icon.is-success {
+  background: color-mix(in oklch, var(--color-success) 12%, transparent);
+  color: var(--color-success);
+}
+.metric-icon.is-warning {
+  background: color-mix(in oklch, var(--color-warning) 12%, transparent);
+  color: var(--color-warning);
+}
+.metric-icon.is-info {
+  background: color-mix(in oklch, var(--color-info) 12%, transparent);
+  color: var(--color-info);
+}
+.brand-lockup,
+.breadcrumb,
+.topbar-actions,
+.button-content,
+.hero-meta,
+.preset-card__head,
+.sidebar-footer,
+.task-row,
+.task-row__main,
+.panel-heading,
+.metric-card__top,
+.component-row,
+.surface-sample,
+.density-control {
+  display: flex;
+  align-items: center;
+}
+.button-content {
+  gap: var(--space-2);
+}
+.hero-meta {
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  background: var(--surface-card);
+  font-size: var(--font-size-xs);
+}
+.live-dot,
+.activity-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--color-success);
+  box-shadow: 0 0 0 4px
+    color-mix(in oklch, var(--color-success) 14%, transparent);
+}
+.runtime-notice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid color-mix(in oklch, var(--brand-primary) 24%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in oklch, var(--brand-primary) 8%, var(--surface-card));
+  color: var(--text-secondary);
+}
+.runtime-notice > svg {
+  flex: 0 0 auto;
+  color: var(--brand-primary);
+}
+.runtime-notice .text-primary {
+  flex: 1;
+  font-size: var(--font-size-sm);
+}
+.runtime-notice button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+}

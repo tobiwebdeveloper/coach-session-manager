@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { RouterView } from "vue-router"
+import AppLayout from "./layouts/AppLayout.vue"
+</script>
+
 <template>
-  <h1>tESt</h1>
+  <AppLayout>
+    <RouterView />
+  </AppLayout>
 </template>

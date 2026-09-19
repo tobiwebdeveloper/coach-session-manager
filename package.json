@@ -1,1 +1,29 @@
-{}
+{
+  "devDependencies": {
+    "@paraxe/cli": "^0.1.0",
+    "concurrently": "^10.0.5"
+  },
+  "name": "coach-session-manager",
+  "version": "1.0.0",
+  "description": "A full-stack football academy session management application.",
+  "main": "index.js",
+  "dependencies": {
+    "picocolors": "^1.1.1",
+    "sisteransi": "^1.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiwebdeveloper/coach-session-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tobiwebdeveloper/coach-session-manager/issues"
+  },
+  "homepage": "https://github.com/tobiwebdeveloper/coach-session-manager#readme"
+}

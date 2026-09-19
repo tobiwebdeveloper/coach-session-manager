@@ -1,0 +1,23 @@
+{
+  "preset": {
+    "id": "LRpoikdl",
+    "baseColor": "slate",
+    "accent": "violet",
+    "chart": "teal",
+    "contrast": 1.3,
+    "fonts": {
+      "heading": "Plus Jakarta Sans",
+      "body": "Lexend",
+      "mono": "JetBrains Mono"
+    },
+    "iconLibrary": "lucide",
+    "radius": "md",
+    "density": "comfortable",
+    "menu": {
+      "style": "default",
+      "accent": "bold"
+    }
+  },
+  "themeOut": "src/styles/paraxe-theme.css",
+  "presetOut": "src/styles/paraxe-preset.css"
+}
